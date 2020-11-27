@@ -1,4 +1,4 @@
-import { root } from './Node';
+import { tree1 } from './TreeNode';
 
 const maximumDepth = root => {
     if (root === null) return 0;
@@ -20,6 +20,6 @@ const minimumDepth = root => {
         else return 1 + leftDepth;
     }
 };
-const maxDepth = maximumDepth(root);
-const minDepth = minimumDepth(root);
+const maxDepth = maximumDepth(tree1);
+const minDepth = minimumDepth(tree1);
 console.log(maxDepth, minDepth)
