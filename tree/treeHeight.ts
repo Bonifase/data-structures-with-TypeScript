@@ -1,5 +1,12 @@
 import { tree1 } from './TreeNode';
 
+
+export const getHeight = root => {
+    if(root === null) return 0;
+    return max(getHeight(root.left), getHeight(root.right)) + 1;
+}
+const max = (a, b) => a > b ? a : b;
+
 const maximumDepth = root => {
     if (root === null) return 0;
     else{
